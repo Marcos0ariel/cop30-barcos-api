@@ -13,7 +13,11 @@ const Boat = sequelize.define("Boat",{
     destination: {
         type: DataTypes.STRING,
         allowNull: false,
-    }
+    },
+    departure_location: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 });
 
 module.exports = Boat;
